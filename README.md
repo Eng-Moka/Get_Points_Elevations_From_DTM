@@ -29,8 +29,8 @@ When working with geospatial data, it's often necessary to determine the elevati
 To get started, clone the repository and install the required dependencies.
 
 ```bash
-git clone https://github.com/yourusername/your-repo.git
-cd your-repo
+git clone https://github.com/Eng-Moka/Get_Points_Elevations_From_DTM/tree/main
+cd Get_Points_Elevations_From_DTM
 pip install -r requirements.txt
 ```
 
