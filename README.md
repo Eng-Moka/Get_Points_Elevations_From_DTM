@@ -20,13 +20,10 @@ Flexibility: Supports both Shapefiles and FeatureClasses from Geodatabases.
 Installation
 To get started, clone the repository and install the required dependencies.
 
-bash
-Copy code
 git clone https:https://github.com/Eng-Moka/Get_Points_Elevations_From_DTM/tree/main
 cd Get_Points_Elevations_From_DTM
 pip install -r requirements.txt
 Ensure you have the following libraries installed:
-
 geopandas
 rasterio
 Usage
