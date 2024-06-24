@@ -41,13 +41,23 @@ rasterio
 The main script, Get_Points_Elevations_From_DTM.py, includes functions for reading points features, reading DTM rasters, and extracting elevations.
 
 **Example Usage**
-Prepare your points feature and DTM raster files:
+import geopandas as gpd
+import rasterio
 
-Points feature (Shapefile or FeatureClass from a Geodatabase)
-DTM raster file (TIF format)
-Modify the script with your file paths:
-YOUR_POINTS_FEATUER = r"path_to_your_points_feature"
-YOUR_DTM_RASTER = r"path_to_your_dtm_raster"
+# Define your file paths
+YOUR_POINTS_FEATURE = r"path_to_your_points_feature.shp"
+YOUR_DTM_RASTER = r"path_to_your_dtm_raster.tif"
+
+# Read points feature and DTM raster
+points_gdf, points_feature_type = reading_the_points_feature(YOUR_POINTS_FEATURE)
+DTM_raster = reading_the_DTM(YOUR_DTM_RASTER)
+
+# Extract elevations
+points_gdf_with_elevations = get_points_elevations_from_DTM(points_gdf, DTM_raster, elevations_field="Z_DTM", edit_in_place=False)
+
+# Save the results
+save_as_new_file(YOUR_POINTS_FEATURE, points_gdf_with_elevations, points_feature_type)
+
 
 Run the script:
 python Get_Points_Elevations_From_DTM.py
