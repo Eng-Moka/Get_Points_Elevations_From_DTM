@@ -1,28 +1,38 @@
 # Elevation Extraction for Points Intersecting with DTM
 
-  This repository contains a Python script designed to efficiently extract elevation values for specific points intersecting with a Digital Terrain Model (DTM) using GeoPandas and Rasterio. This solution is particularly useful for geospatial data analysis and Geographic Information Systems (GIS) applications.
+This repository contains a Python script designed to efficiently extract elevation values for specific points intersecting with a Digital Terrain Model (DTM) using GeoPandas and Rasterio. This solution is particularly useful for geospatial data analysis and Geographic Information Systems (GIS) applications.
 
-Table of Contents
-Introduction
-Features
-Installation
-Usage
-Example
-Contributing
-Acknowledgements
-Introduction
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Functions](#functions)
+- [Example](#example)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
+
+## Introduction
+
 When working with geospatial data, it's often necessary to determine the elevation of specific points based on a DTM. Traditional methods can be extremely slow, especially when dealing with large datasets. This repository provides an efficient and accurate method to perform this task using Python.
 
-Features
-Speed: Utilizes vectorized operations for fast processing.
-Accuracy: Ensures precise elevation extraction for each point.
-Flexibility: Supports both Shapefiles and FeatureClasses from Geodatabases.
-Installation
+## Features
+
+- **Speed**: Utilizes vectorized operations for fast processing.
+- **Accuracy**: Ensures precise elevation extraction for each point.
+- **Flexibility**: Supports both Shapefiles and FeatureClasses from Geodatabases.
+
+## Installation
+
 To get started, clone the repository and install the required dependencies.
 
-git clone https:https://github.com/Eng-Moka/Get_Points_Elevations_From_DTM/tree/main
-cd Get_Points_Elevations_From_DTM
+```bash
+git clone https://github.com/yourusername/your-repo.git
+cd your-repo
 pip install -r requirements.txt
+
 Ensure you have the following libraries installed:
 geopandas
 rasterio
