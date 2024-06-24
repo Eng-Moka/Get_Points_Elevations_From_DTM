@@ -32,6 +32,7 @@ To get started, clone the repository and install the required dependencies.
 git clone https://github.com/yourusername/your-repo.git
 cd your-repo
 pip install -r requirements.txt
+```bash
 
 Ensure you have the following libraries installed:
 geopandas
