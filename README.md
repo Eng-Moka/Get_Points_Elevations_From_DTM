@@ -22,15 +22,15 @@ To get started, clone the repository and install the required dependencies.
 
 bash
 Copy code
-git clone https://github.com/yourusername/your-repo.git
-cd your-repo
+git clone https:https://github.com/Eng-Moka/Get_Points_Elevations_From_DTM/tree/main
+cd Get_Points_Elevations_From_DTM
 pip install -r requirements.txt
 Ensure you have the following libraries installed:
 
 geopandas
 rasterio
 Usage
-The main script, main.py, includes functions for reading points features, reading DTM rasters, and extracting elevations.
+The main script, Get_Points_Elevations_From_DTM.py, includes functions for reading points features, reading DTM rasters, and extracting elevations.
 
 Example Usage
 Prepare your points feature and DTM raster files:
@@ -42,7 +42,7 @@ YOUR_POINTS_FEATUER = r"path_to_your_points_feature"
 YOUR_DTM_RASTER = r"path_to_your_dtm_raster"
 
 Run the script:
-python main.py
+python Get_Points_Elevations_From_DTM.py
 Functions
 reading_the_points_featuer(YOUR_POINTS_FEATUER): Reads points feature from a Shapefile or Geodatabase.
 reading_the_DTM(YOUR_DTM_RASTER): Reads DTM raster file.
