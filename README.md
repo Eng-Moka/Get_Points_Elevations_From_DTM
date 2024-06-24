@@ -1,5 +1,6 @@
-Elevation Extraction for Points Intersecting with DTM
-This repository contains a Python script designed to efficiently extract elevation values for specific points intersecting with a Digital Terrain Model (DTM) using GeoPandas and Rasterio. This solution is particularly useful for geospatial data analysis and Geographic Information Systems (GIS) applications.
+# Elevation Extraction for Points Intersecting with DTM
+
+  This repository contains a Python script designed to efficiently extract elevation values for specific points intersecting with a Digital Terrain Model (DTM) using GeoPandas and Rasterio. This solution is particularly useful for geospatial data analysis and Geographic Information Systems (GIS) applications.
 
 Table of Contents
 Introduction
